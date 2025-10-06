@@ -1,5 +1,4 @@
 import Section from "@/components/ui/Section";
-import Card from "@/components/ui/Card";
 import Badge from "@/components/ui/Badge";
 import SocialIcon from "@/components/ui/SocialIcon";
 import Reveal from "@/components/ui/Reveal";

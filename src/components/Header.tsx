@@ -23,7 +23,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-[color:var(--border)] bg-background/75 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         <Link href="#hero" className="font-semibold tracking-tight">
-          <span className="text-base">Alex Carter</span>
+          <span className="text-base">Anushka Patel</span>
         </Link>
 
         <nav className="hidden md:flex gap-6 text-sm items-center">

@@ -10,7 +10,7 @@ type Props = {
 };
 
 export default function Card({ title, subtitle, description, tags = [], image, href }: Props) {
-  const Wrapper = href ? "a" : ("div" as any);
+  const Wrapper: React.ElementType = href ? "a" : "div";
   return (
     <Wrapper
       {...(href ? { href, target: "_blank", rel: "noreferrer" } : {})}

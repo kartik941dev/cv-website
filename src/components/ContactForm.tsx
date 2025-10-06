@@ -9,9 +9,9 @@ type Props = {
 export default function ContactForm({ formspreeId }: Props) {
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
 
-  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    const form = e.currentTarget;
+  async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const form = event.currentTarget;
     const data = new FormData(form);
     setStatus("submitting");
     try {
@@ -27,7 +27,7 @@ export default function ContactForm({ formspreeId }: Props) {
       }
       setStatus("success");
       form.reset();
-    } catch (e) {
+    } catch {
       setStatus("error");
     }
   }

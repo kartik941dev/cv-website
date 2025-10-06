@@ -1,5 +1,5 @@
 export const profile = {
-  name: "Alex Carter",
+  name: "Anushka Patel",
   title: "Senior Frontend Engineer",
   location: "Bengaluru, India",
   about: [
