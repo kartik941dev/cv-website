@@ -17,13 +17,13 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Your Name — CV",
-    template: "%s — Your Name",
+    default: "Anushka Patel — CV",
+    template: "%s — Anushka Patel",
   },
   description: "Personal CV website: achievements, projects, interests, and contact.",
   metadataBase: new URL("https://example.com"),
   openGraph: {
-    title: "Your Name — CV",
+    title: "Anushka Patel — CV",
     description: "Personal CV website: achievements, projects, interests, and contact.",
     type: "website",
     url: "https://example.com",
@@ -60,7 +60,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              name: "Your Name",
+              name: "Anushka Patel",
               url: "https://example.com",
               sameAs: [
                 "https://www.linkedin.com/in/your-profile",

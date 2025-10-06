@@ -25,6 +25,13 @@ export type Achievement = {
 
 export const achievements: Achievement[] = [
   {
+    title: "Solutions Architect role at AWS",
+    timeframe: "2025",
+    description: "Joined Amazon Web Services as a Solutions Architect focused on cloud-native architectures and modernization.",
+    impact: "Advising enterprise customers; enabling scalable, cost-efficient solutions",
+    tags: ["Professional", "Solutions", "Architecture", "Job", "AWS"],
+  },
+  {
     title: "Led redesign of B2B analytics suite",
     timeframe: "2024",
     description: "Owned UX and frontend architecture for a 40+ screen analytics product.",
