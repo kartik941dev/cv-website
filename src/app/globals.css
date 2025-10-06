@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --surface: #ffffff;
+  --border: rgba(0,0,0,0.15);
+  color-scheme: light;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --surface: #111111;
+    --border: rgba(255,255,255,0.15);
+  }
+}
+
+/* Allow manual dark mode override */
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --surface: #111111;
+  --border: rgba(255,255,255,0.15);
+  color-scheme: dark;
+}
+
+/* Force light theme even if system prefers dark */
+.light {
+  --background: #ffffff;
+  --foreground: #171717;
+  --surface: #ffffff;
+  --border: rgba(0,0,0,0.15);
+  color-scheme: light;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Smooth scroll behavior for in-page navigation */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Simple icon utility using currentColor with Heroicons names (requires CSS icon font or SVGs in future) */
+.i-heroicons-bars-3::before {
+  content: "≡"; /* placeholder; replace with SVG icon system later */
+}
